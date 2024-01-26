@@ -13,7 +13,7 @@ export class ImageController {
     }
 
 
-    getImage = (req: Request, res: Response) => {
+    public getImage = (req: Request, res: Response) => {
         const { type = '', img = '' } = req.params;
 
         const imgPath = path.resolve(__dirname, `../../../uploads/${type}/${img}`);
